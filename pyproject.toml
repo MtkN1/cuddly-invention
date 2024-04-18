@@ -34,6 +34,10 @@ Source = "https://github.com/unknown/cuddly-invention"
 [tool.hatch.version]
 source = "vcs"
 
+[tool.hatch.version.raw-options]
+version_scheme = "python-simplified-semver"
+local_scheme = "no-local-version"
+
 [tool.hatch.envs.default]
 dependencies = [
   "coverage[toml]>=6.5",
